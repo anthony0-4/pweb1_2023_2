@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  </head>
+  <body>
+    <h1>Hello, world!</h1>
+    <div class="container text-center">
+        <div class="row">
+          <div class="col">
+            <form>
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Email address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label">Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class="mb-3 form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+          </div>
+          <div class="col">
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon1">@</span>
+                <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+              </div>
+              
+              <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                <span class="input-group-text" id="basic-addon2">@example.com</span>
+              </div>
+              
+              <div class="mb-3">
+                <label for="basic-url" class="form-label">Your vanity URL</label>
+                <div class="input-group">
+                  <span class="input-group-text" id="basic-addon3">https://example.com/users/</span>
+                  <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3 basic-addon4">
+                </div>
+                <div class="form-text" id="basic-addon4">Example help text goes outside the input group.</div>
+              </div>
+              
+              <div class="input-group mb-3">
+                <span class="input-group-text">$</span>
+                <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                <span class="input-group-text">.00</span>
+              </div>
+              
+              <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Username" aria-label="Username">
+                <span class="input-group-text">@</span>
+                <input type="text" class="form-control" placeholder="Server" aria-label="Server">
+              </div>
+              
+              <div class="input-group">
+                <span class="input-group-text">With textarea</span>
+                <textarea class="form-control" aria-label="With textarea"></textarea>
+              </div>
+          </div>
+        </div>
+    <div class="container text-center">
+        <div class="row">
+          <div class="col">
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      Accordion Item #1
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      Accordion Item #2
+                    </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      Accordion Item #3
+                    </button>
+                  </h2>
+                  <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+          <div class="col">
+            <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+                <button type="button" class="btn btn-danger">Left</button>
+                <button type="button" class="btn btn-warning">Middle</button>
+                <button type="button" class="btn btn-success">Right</button>
+              </div>
+          </div>
+          <div class="col">
+           <img src="data:image/png;base64,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" alt="">
+          </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <table class="table table-hover">
+                    <thead>
+                      <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">First</th>
+                        <th scope="col">Last</th>
+                        <th scope="col">Handle</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>@fat</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td colspan="2">Larry the Bird</td>
+                        <td>@twitter</td>
+                      </tr>
+                    </tbody>
+                  </table>
+            </div>
+        </div>
+      </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  </body>
+</html>
